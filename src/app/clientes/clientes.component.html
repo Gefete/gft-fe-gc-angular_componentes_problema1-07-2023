@@ -1,0 +1,18 @@
+<hr>
+<h2>Listado de Clientes</h2>
+ <div class="table-responsive-sm">
+    <table class="table w-50 text-center">
+        <tr>
+            <th>Nombre</th>
+            <th>CIF</th>
+            <th>Direccion</th>
+            <th>Grupo</th>
+        </tr>
+        <tr *ngFor="let item of data">
+            <td>{{item.nombre}}</td>
+            <td>{{item.cif}}</td>
+            <td>{{item.direccion}}</td>
+            <td>{{item.grupo}}</td>
+        </tr>
+    </table>
+</div>
