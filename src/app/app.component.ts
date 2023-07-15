@@ -7,13 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gft-fe-gc-angular_componentes_problema1-07-2023';
+
+  // Variables
   nombre = '';
   cif = '';
   direccion = '';
   grupo = '';
   clientes:any = [];
 
-
+// Metodo para añadir clientes al array
   addCliente(){
     this.clientes.push({
       'nombre' : this.nombre,

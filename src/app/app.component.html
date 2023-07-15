@@ -1,10 +1,11 @@
 <div class="container d-block justify-content-center mt-5">
+    <h2>Formulario Clientes</h2>
     <div>
-        <p>Introduce tu nombre: <input type="text" [(ngModel)]="nombre" ></p>
-        <p>Introduce tu cif: <input type="text" [(ngModel)]="cif"></p>
-        <p>Introduce tu direccion: <input type="text" [(ngModel)]="direccion"></p>
+        <p>Introduce tu nombre: <input type="text" class="form-control" [(ngModel)]="nombre" ></p>
+        <p>Introduce tu cif: <input type="text" class="form-control" [(ngModel)]="cif"></p>
+        <p>Introduce tu direccion: <input type="text" class="form-control" [(ngModel)]="direccion"></p>
         <p>Introduce tu grupo: 
-            <select [(ngModel)]="grupo">
+            <select class="form-select" [(ngModel)]="grupo">
                 Sin definir
                 <option value="1">1</option>
                 <option value="2" selected>2</option>
@@ -12,8 +13,8 @@
                 <option value="4">4</option>
             </select>
         </p>
-        <button (click)="addCliente()">Guardar</button>
+        <!-- Este boton llama al metodo que añade el contenido del form a la array -->
+        <button class="btn btn-primary" (click)="addCliente()">Guardar</button>
     </div>
-    <!-- {{ clientes | json}} -->
     <app-clientes [data]="clientes"></app-clientes>
 </div>

@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ClientesComponent {
   
+  // Esta variable (@Input) recibe datos por argumentos desde el componente Padre (App)
+  // Recibe un array desde componente App
   @Input() data:any;
 
   
